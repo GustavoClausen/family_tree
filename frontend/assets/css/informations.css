@@ -1,0 +1,127 @@
+.box-infos-modal.informations {
+  height: 15rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+}
+.box-infos-modal.informations div {
+  font-size: 1.3rem;
+}
+.box-infos-modal.informations b {
+  color: var(--color-btn-modal-background);
+  font-size: 1.3rem;
+}
+.box-infos-modal.birth-certificate-information,
+.box-infos-modal.marriage-certificate-information {
+  height: 9rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 70% 2% 28%;
+}
+.box-infos-modal.birth-certificate-information div,
+.box-infos-modal.marriage-certificate-information div {
+  max-height: 100%;
+  font-size: 1.3rem;
+}
+.box-infos-modal.birth-certificate-information > div,
+.box-infos-modal.marriage-certificate-information > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 5rem;
+}
+.box-infos-modal.birth-certificate-information .line,
+.box-infos-modal.marriage-certificate-information .line {
+  border-left: 0.12em solid var(--color-modal-border);
+  height: 100%;
+}
+.birth-certificate-information .title,
+.marriage-certificate-information .title {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+.birth-certificate-information .info-text,
+.marriage-certificate-information .info-text {
+  font-weight: bold;
+  color: var(--color-btn-modal-background);
+}
+.btns-edit-delete {
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btns-edit-delete.btn-delete {
+  border: 0.1rem solid var(--color-red);
+  transition: background-color var(--transition-background-color) ease-in-out;
+  color: var(--color-red);
+}
+.btns-edit-delete.btn-delete:hover {
+  background-color: var(--color-red-hover);
+}
+.btns-edit-delete.btn-edit {
+  border: 0.1rem solid var(--color-btn-modal-background);
+  transition: background-color var(--transition-background-color) ease-in-out;
+  color: var(--color-btn-modal-background);
+}
+.btns-edit-delete.btn-edit:hover {
+  background-color: var(--color-btn-modal-background-hover);
+}
+.ctnr-btns-edit-delete {
+  display: flex;
+  gap: 2rem;
+  height: 3rem;
+}
+.container-infos-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-infos-member div .tooltip {
+  margin-left: 1rem;
+  height: 1.6rem;
+  width: 1.6rem;
+  transform: translate(0px, 2.5px);
+}
+.third-box .container-show-all-files {
+  overflow-y: scroll;
+}
+.container-show-all-files .container-file {
+  margin: 0 0 1rem 0;
+  border-bottom: 0.1em solid var(--color-modal-border);
+  padding-bottom: 0.25rem;
+  padding-right: 0;
+}
+.container-show-all-files .container-file:last-child {
+  margin: 0;
+}
+.container-show-all-files .container-file .container-infos-file {
+  max-width: 15.5rem;
+}
+.container-show-all-files::-webkit-scrollbar {
+  width: .5rem;
+}
+.container-show-all-files::-webkit-scrollbar-thumb {
+  background-color: #9e9c9c;
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+.no-files-container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--color-no-file);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.no-files-container img {
+  max-width: 2rem;
+}
+.no-files-container span {
+  font-weight: bold;
+  margin-bottom: .2rem;
+  color: #9e9c9c;
+}

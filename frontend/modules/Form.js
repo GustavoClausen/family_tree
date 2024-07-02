@@ -309,7 +309,7 @@ export default class Form {
     this.inptBirthDate.placeholder = 'Ex: 1880 ou 10/04/1880';
     this.inptBirthDate.maxLength = '10';
 
-    await fetch('/frontend/assets/json/countries.json')
+    await fetch('/public/assets/json/countries.json')
       .then((promise) => promise.json())
       .then((data) => {
         const keys = Object.keys(data);

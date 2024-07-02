@@ -756,7 +756,7 @@ var Form = /*#__PURE__*/function () {
               this.inptBirthDate.placeholder = 'Ex: 1880 ou 10/04/1880';
               this.inptBirthDate.maxLength = '10';
               _context2.next = 67;
-              return fetch('/frontend/assets/json/countries.json').then(function (promise) {
+              return fetch('/public/assets/json/countries.json').then(function (promise) {
                 return promise.json();
               }).then(function (data) {
                 var keys = Object.keys(data);

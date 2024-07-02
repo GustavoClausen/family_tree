@@ -94,7 +94,7 @@ export default class CreatorCard {
         <img
           class="img"
           alt="Avatar"
-          src="../../frontend/assets/img/${this.gender}${age}${this.applicant ? '.svg' : '-generic.svg'}"
+          src="../../family_tree/frontend/assets/img/${this.gender}${age}${this.applicant ? '.svg' : '-generic.svg'}"
         >
       </div>
       <div class="card-name">

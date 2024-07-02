@@ -94,7 +94,7 @@ var CreatorCard = /*#__PURE__*/function () {
       var spanLocalBirth = this.ct.createSpan(['info-local-birth']);
       spanLocalBirth.innerText = this.birthPlaceComplete;
       spanLocalBirth.style.display = 'none';
-      var card = "\n      <div class=\"card-img\">\n        <img\n          class=\"img\"\n          alt=\"Avatar\"\n          src=\"../../frontend/assets/img/".concat(this.gender).concat(age).concat(this.applicant ? '.svg' : '-generic.svg', "\"\n        >\n      </div>\n      <div class=\"card-name\">\n        <div class=\"name\">").concat(this.fullName, "</div>\n      </div>\n      <div class=\"card-flag-birth-container\">\n        <span class=\"acronym-birth-certificate\" style=\"display: none;\">").concat(this.birthPlace, "</span>\n        <div class=\"container-flag\">\n          <img\n            class=\"flag\"\n            src=\"https://flagcdn.com/").concat(this.birthPlace, ".svg\"\n            alt=\"Bandeira ").concat(this.birthPlaceComplete, "\">\n        </div>\n        <div class=\"birth-date\">").concat(this.birthDate, "</div>\n      </div>\n      <div class=\"container-card-end-line\">\n        <div class=\"card-end-line ").concat(this.applicant ? this.gender : 'generic-person', "\"></div>\n      </div>\n    ");
+      var card = "\n      <div class=\"card-img\">\n        <img\n          class=\"img\"\n          alt=\"Avatar\"\n          src=\"../../family_tree/frontend/assets/img/".concat(this.gender).concat(age).concat(this.applicant ? '.svg' : '-generic.svg', "\"\n        >\n      </div>\n      <div class=\"card-name\">\n        <div class=\"name\">").concat(this.fullName, "</div>\n      </div>\n      <div class=\"card-flag-birth-container\">\n        <span class=\"acronym-birth-certificate\" style=\"display: none;\">").concat(this.birthPlace, "</span>\n        <div class=\"container-flag\">\n          <img\n            class=\"flag\"\n            src=\"https://flagcdn.com/").concat(this.birthPlace, ".svg\"\n            alt=\"Bandeira ").concat(this.birthPlaceComplete, "\">\n        </div>\n        <div class=\"birth-date\">").concat(this.birthDate, "</div>\n      </div>\n      <div class=\"container-card-end-line\">\n        <div class=\"card-end-line ").concat(this.applicant ? this.gender : 'generic-person', "\"></div>\n      </div>\n    ");
       container.innerHTML = card;
       container.appendChild(inptDocsBirthCertificate);
       container.appendChild(inptDocsMarriageCertificate);
@@ -1447,7 +1447,7 @@ var Form = /*#__PURE__*/function () {
         var image = _this7.ct.createImgGenericTag();
         var type = file.type.split('/')[1];
         containerDelete.title = 'Excluir arquivo';
-        image.src = "../../frontend/assets/img/".concat(type, ".svg");
+        image.src = "../../family_tree/frontend/assets/img/".concat(type, ".svg");
         image.classList.add('img-file-upload');
         containerDelete.innerHTML = closeIcon;
         containerDivImgAndInfosFiles.appendChild(image);
@@ -2304,7 +2304,7 @@ var Tree = /*#__PURE__*/function () {
         var img = this.ct.createImgGenericTag();
         var text = this.ct.createSpan([]);
         text.innerHTML = 'Cópia não adicionada';
-        img.src = '../../frontend/assets/img/folder.svg';
+        img.src = '../../family_tree/frontend/assets/img/folder.svg';
         containerNoFiles.appendChild(text);
         containerNoFiles.appendChild(img);
         return containerNoFiles;
@@ -2321,7 +2321,7 @@ var Tree = /*#__PURE__*/function () {
         var pName = _this5.ct.paragraph(['info-file-name'], undefined, name);
         var image = _this5.ct.createImgGenericTag();
         var type = file.type.split('/')[1];
-        image.src = "../../frontend/assets/img/".concat(type, ".svg");
+        image.src = "../../family_tree/frontend/assets/img/".concat(type, ".svg");
         image.classList.add('img-file-upload');
         containerDivImgAndInfosFiles.appendChild(image);
         containerDivImgAndInfosFiles.appendChild(containerInfos);
@@ -2378,11 +2378,11 @@ var Tree = /*#__PURE__*/function () {
         ageToIcon = '';
       }
       if (applicant) {
-        imgAvatar.src = "../../frontend/assets/img/".concat(gender).concat(ageToIcon, ".svg");
+        imgAvatar.src = "../../family_tree/frontend/assets/img/".concat(gender).concat(ageToIcon, ".svg");
         cardEndLine.classList = '';
         cardEndLine.classList.add('card-end-line', gender);
       } else {
-        imgAvatar.src = "../../frontend/assets/img/".concat(gender).concat(ageToIcon, "-generic.svg");
+        imgAvatar.src = "../../family_tree/frontend/assets/img/".concat(gender).concat(ageToIcon, "-generic.svg");
         cardEndLine.classList = '';
         cardEndLine.classList.add('card-end-line', 'generic-person');
       }

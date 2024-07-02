@@ -528,7 +528,7 @@ export default class Tree {
       const img = this.ct.createImgGenericTag();
       const text = this.ct.createSpan([]);
       text.innerHTML = 'Cópia não adicionada';
-      img.src = '../../frontend/assets/img/folder.svg';
+      img.src = '../../family_tree/frontend/assets/img/folder.svg';
       containerNoFiles.appendChild(text);
       containerNoFiles.appendChild(img);
       return containerNoFiles;
@@ -546,7 +546,7 @@ export default class Tree {
       const pName = this.ct.paragraph(['info-file-name'], undefined, name);
       const image = this.ct.createImgGenericTag();
       const type = file.type.split('/')[1];
-      image.src = `../../frontend/assets/img/${type}.svg`;
+      image.src = `../../family_tree/frontend/assets/img/${type}.svg`;
       image.classList.add('img-file-upload');
       containerDivImgAndInfosFiles.appendChild(image);
       containerDivImgAndInfosFiles.appendChild(containerInfos);
@@ -605,11 +605,11 @@ export default class Tree {
     }
 
     if (applicant) {
-      imgAvatar.src = `../../frontend/assets/img/${gender}${ageToIcon}.svg`;
+      imgAvatar.src = `../../family_tree/frontend/assets/img/${gender}${ageToIcon}.svg`;
       cardEndLine.classList = '';
       cardEndLine.classList.add('card-end-line', gender);
     } else {
-      imgAvatar.src = `../../frontend/assets/img/${gender}${ageToIcon}-generic.svg`;
+      imgAvatar.src = `../../family_tree/frontend/assets/img/${gender}${ageToIcon}-generic.svg`;
       cardEndLine.classList = '';
       cardEndLine.classList.add('card-end-line', 'generic-person');
     }

@@ -940,7 +940,7 @@ export default class Form {
       const image = this.ct.createImgGenericTag();
       const type = file.type.split('/')[1];
       containerDelete.title = 'Excluir arquivo';
-      image.src = `../../frontend/assets/img/${type}.svg`;
+      image.src = `../../family_tree/frontend/assets/img/${type}.svg`;
       image.classList.add('img-file-upload');
       containerDelete.innerHTML = closeIcon;
       containerDivImgAndInfosFiles.appendChild(image);

@@ -1,4 +1,6 @@
 {
+  "it":	"Itália",
+  "br":	"Brasil",
   "af":	"Afeganistão",
   "za":	"África do Sul",
   "us-al":	"Alabama",
@@ -32,7 +34,6 @@
   "bo":	"Bolívia",
   "ba":	"Bósnia e Herzegovina",
   "bw":	"Botswana",
-  "br":	"Brasil",
   "bn":	"Brunei",
   "bg":	"Bulgária",
   "bf":	"Burquina Fasso",
@@ -146,7 +147,6 @@
   "gb-nir":	"Irlanda do Norte",
   "is":	"Islândia",
   "il":	"Israel",
-  "it":	"Itália",
   "jm":	"Jamaica",
   "jp":	"Japão",
   "je":	"Jersey",
